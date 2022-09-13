@@ -24,7 +24,7 @@ scroll(
   }
 );
 
-const lillevideo = document.querySelector("#videoscrub");
+const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
 
 scroll(

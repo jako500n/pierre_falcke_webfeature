@@ -18,6 +18,7 @@ module.exports = {
       notoSans: "Noto Sans, sans-serif",
       oswald: "Oswald, sans-serif",
       inter: "Inter, sans-serif",
+      rubik: "Rubik Dirt, sans-serif",
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
