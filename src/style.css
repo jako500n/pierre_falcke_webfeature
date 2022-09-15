@@ -11,6 +11,14 @@
     /* animation: glitch 2000ms infinite; */
   }
 
+  .h1_glitch {
+    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+
+    animation: h1_glitch 8000ms infinite;
+  }
+
   .tekstboks_bgpurple {
     box-shadow: 0 0 0 4.25em #000131, 0 0 0 4.35em #f900fe, 0 0 0 4.6em #000131,
       0 0 0 4.7em #06eef2, 0 0 0 4.95em #000131, 0 0 0 5.05em #04ea11;
@@ -55,24 +63,24 @@
   }
 }
 
-@keyframes glitch {
+@keyframes h1_glitch {
   0% {
     text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-      -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+      -0.09em -0.05em 0 rgba(0, 255, 0, 0.75),
+      0.05em 0.09em 0 rgba(0, 0, 255, 0.75);
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75),
-      0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.09em -0.05em 0 rgba(255, 0, 0, 0.75),
+      0.05em 0.05em 0 rgba(0, 255, 0, 0.75),
+      -0.09em -0.09em 0 rgba(0, 0, 255, 0.75);
   }
   50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75),
-      0.05em 0 0 rgba(0, 255, 0, 0.75), 0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0.09em 0 rgba(255, 0, 0, 0.75),
+      0.09em 0 0 rgba(0, 255, 0, 0.75), 0 -0.09em 0 rgba(0, 0, 255, 0.75);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75),
-      -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em 0 0 rgba(255, 0, 0, 0.75),
+      -0.05em -0.05em 0 rgba(0, 255, 0, 0.75),
+      -0.05em -0.09em 0 rgba(0, 0, 255, 0.75);
   }
 }

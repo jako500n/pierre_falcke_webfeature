@@ -2,15 +2,9 @@ import "./style.css";
 /* Import af Motion One bibliotek */
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-document
-  .querySelectorAll(".parallaxcontainermedflereelementer")
-  .forEach((parallaxcontainer) => {
-    const elementderskalparallaxes2 =
-      parallaxcontainer.querySelector(".paragraf_01");
-    scroll(animate(elementderskalparallaxes2, { y: [0, 800] }), {
-      target: elementderskalparallaxes2,
-    });
-  });
+scroll(animate("h1", { y: [0, -12000] }));
+
+scroll(animate(".test", { y: [-100, 0] }));
 
 scroll(
   animate(".scrollzoomimg", {
@@ -24,19 +18,33 @@ scroll(
   }
 );
 
-// document.querySelectorAll(".tekstboks_snap").forEach((tekstboks) => {
-//   const header = tekstboks.querySelector(".tekstboks_bgpurple");
-//   scroll(animate(header, { y: [-100, 50] }), {
-//     target: header,
-//   });
-// });
+scroll(
+  animate(".scrollzoomimg_02", {
+    scale: [1, 12],
+  }),
 
-// document.querySelectorAll(".tekstboks_snap_02").forEach((tekstboks) => {
-//   const header = tekstboks.querySelector(".tekstboks_bgpurple");
-//   scroll(animate(header, { y: [50, 50] }), {
-//     target: header,
-//   });
-// });
+  {
+    target: document.querySelector(".scrollzoomimg_02"),
+
+    offset: ["0.3 0.7", "1 1"],
+  }
+);
+
+inView(".glow_01", () => {
+  animate(".glow_01", { opacity: [0.8, 1] }, { delay: 0.5, duration: 1 });
+});
+
+inView(".glow_02", () => {
+  animate(".glow_02", { opacity: [0.8, 1] }, { delay: 1.5, duration: 1 });
+});
+
+inView(".glow_03", () => {
+  animate(".glow_03", { opacity: [0.8, 1] }, { delay: 0.5, duration: 1 });
+});
+
+inView(".glow_04", () => {
+  animate(".roter_04", { opacity: [0.8, 1] }, { delay: 1.5, duration: 1 });
+});
 
 const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
@@ -61,3 +69,5 @@ inView(".lomostagger", ({ target }) => {
     }
   );
 });
+
+scroll(animate(".progress-bar", { scaleX: [0, 1] }));
