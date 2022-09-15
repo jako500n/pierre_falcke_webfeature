@@ -10,6 +10,49 @@
 
     /* animation: glitch 2000ms infinite; */
   }
+
+  .tekstboks_bgpurple {
+    box-shadow: 0 0 0 4.25em #000131, 0 0 0 4.35em #f900fe, 0 0 0 4.6em #000131,
+      0 0 0 4.7em #06eef2, 0 0 0 4.95em #000131, 0 0 0 5.05em #04ea11;
+  }
+
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  .halvfems {
+    transform: rotate(90deg);
+    transform-origin: top left;
+  }
+
+  .roter_01 {
+    transform: rotate(-15deg);
+  }
+
+  .roter_02 {
+    transform: rotate(15deg);
+    translate: 0 6.5em;
+  }
+
+  .roter_01_stor_mere {
+    transform: rotate(-15deg);
+    translate: 0 8.5em;
+  }
+
+  .roter_02_stor_mere {
+    transform: rotate(15deg);
+    translate: 0 4.5em;
+  }
+
+  .roter_01_lille {
+    transform: rotate(-15deg);
+    translate: 0 4.5em;
+  }
+
+  .roter_02_lille {
+    transform: rotate(15deg);
+    translate: 0 8.5em;
+  }
 }
 
 @keyframes glitch {

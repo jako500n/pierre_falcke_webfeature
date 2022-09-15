@@ -14,15 +14,29 @@ document
 
 scroll(
   animate(".scrollzoomimg", {
-    scale: [1, 9],
+    scale: [1, 8],
   }),
 
   {
     target: document.querySelector(".scrollzoomimg"),
 
-    offset: ["0.25 0.25", "1 1"],
+    offset: ["0.80 0.80", "1 1"],
   }
 );
+
+// document.querySelectorAll(".tekstboks_snap").forEach((tekstboks) => {
+//   const header = tekstboks.querySelector(".tekstboks_bgpurple");
+//   scroll(animate(header, { y: [-100, 50] }), {
+//     target: header,
+//   });
+// });
+
+// document.querySelectorAll(".tekstboks_snap_02").forEach((tekstboks) => {
+//   const header = tekstboks.querySelector(".tekstboks_bgpurple");
+//   scroll(animate(header, { y: [50, 50] }), {
+//     target: header,
+//   });
+// });
 
 const lillevideo = document.querySelector("#videofil");
 lillevideo.pause();
@@ -37,3 +51,13 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
+
+inView(".lomostagger", ({ target }) => {
+  animate(
+    ".staggeranimation li",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(1, { start: 2 }),
+    }
+  );
+});

@@ -9,9 +9,9 @@ module.exports = {
         hvid: "#FDFDFD",
         blaa: "#06EEF2",
         groen: "#04EA11",
-        lyseroedLight: "#E557B6",
-        lyseroedDark: "#FE00F5",
-        bygning: "#95A3AD",
+        lyseroed: "#F900FE",
+        tekstboks: "#C93AA2",
+        bygning: "#92A0A9",
       },
     },
     fontFamily: {
